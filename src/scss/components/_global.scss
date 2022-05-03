@@ -92,7 +92,28 @@ iframe {
 	}
 }
 
+.section__text {
+	@media (min-width: 768px) {
+		font-size: 20px;
+		line-height: 160%;
+		max-width: 433px;
+	}
+
+	@media (min-width: 1280px){
+		max-width: 711px;
+	}
+
+	@media (min-width: 1920px) {
+		font-size: 25px;
+		max-width: 868px;
+	}
+}
+
 .section__text:not(:last-child) {
 	margin-bottom: 10px;
+
+	@media (min-width: 768px) {
+		margin-bottom: 15px;
+	}
 }
 

@@ -72,9 +72,23 @@ iframe {
 	overflow: hidden;
 }
 
-//.container {
-//	max-width: calc(1180px + 2 * 10px);
-//	padding: 0 10px; 
-//	margin: 0 auto;
-//}
+.container {
+	max-width: calc(330px + 2 * 15px);
+	padding: 0 15px; 
+	margin: 0 auto;
+
+	@media (min-width: 768px) {
+		max-width: calc(738px + 2 * 15px);
+	}
+
+	@media (min-width: 1280px) {
+		max-width: calc(1200px + 2 * 40px);
+		padding: 0 40px; 
+	}
+
+	@media (min-width: 1920px) {
+		max-width: calc(1530px + 2 * 195px);
+		padding: 0 195px; 
+	}
+}
 

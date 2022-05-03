@@ -1,0 +1,41 @@
+.hero {
+	padding: 8px 0 40px;
+}
+
+.hero__breadcrumbs-wrapper {
+
+}
+
+.hero__breadcrumbs-list {
+	display: flex;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.hero__breadcrumbs-item:not(:last-child) {
+	margin-right: 8px;
+}
+
+.hero__breadcrumbs-item:not(:first-child) {
+	position: relative;
+	padding-left: 18px;
+
+	&::before {
+		display: block;
+		content: '';
+		width: 10px;
+		height: 1px;
+		background-color: $main-content-color;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(50%);
+	}
+}
+
+.hero__breadcrumbs-link {
+	transition: color .3s ease-in;
+	&:hover {
+		color: $highlighting-color;
+	}
+}

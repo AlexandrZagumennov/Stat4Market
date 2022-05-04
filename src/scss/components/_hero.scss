@@ -48,19 +48,19 @@
 		height: 245px;
 		background: {
 			color: transparent;
-			image: url('../img/hero/Superman.png');
+			image: url('../img/hero/superman.png');
 			position: 50%;
 			size: cover;
 			repeat: no-repeat;
 		}
 
 		background-image: -webkit-image-set(
-			url('../img/hero/Superman.avif') 1x,
-			url('../img/hero/Superman.webp') 1x
+			url('../img/hero/superman.avif') 1x,
+			url('../img/hero/superman.webp') 1x
 		);
 		background-image: image-set(
-			url('../img/hero/Superman.avif') 1x,
-			url('../img/hero/Superman.webp') 1x
+			url('../img/hero/superman.avif') 1x,
+			url('../img/hero/superman.webp') 1x
 		);
 
 		position: absolute;

@@ -86,7 +86,9 @@
 	}
 
 	.how-work__title {
-		margin-bottom: 85px;
+		max-width: 652px;
+		font-size: 40px;
+		margin: 0 auto 85px;
 	}
 
 	.how-work__container {
@@ -126,6 +128,12 @@
 @media (min-width: 1920px) {
 	.how-work {
 		padding: 117px 0 75px;
+	}
+
+	.how-work__title {
+		max-width: 844px;
+		font-size: 48px;
+		line-height: 64px;
 	}
 
 	.how-work__container {

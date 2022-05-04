@@ -25,6 +25,8 @@
 			createLink('css/index.min.css');
 		})
 	</script>
+
+	<script defer src="js/index.min.js"></script>
 </head>
 
 <body>
@@ -34,7 +36,7 @@
 			<div class="header__wrapper">
 				<p class="header__description">Надежный сервис <br> аналитики для поставщиков на маркетплейсы</p>
 				<h3 class="header__title header__title_analitics">Аналитика</h3>
-				<a href="#" class="header__title header__title_learning">Обучение</a>
+				<a href="#learning" class="header__title header__title_learning">Обучение</a>
 				<a href="tel:+74994503141" class="header__phone"> 8 (499) 450-31-41</a>
 				<button class="header__btn btn">Войти</button>
 				<button class="header__burger btn">
@@ -48,14 +50,14 @@
 		<section class="hero">
 			<div class="container">
 				<div class="hero__breadcrumbs-wrapper">
-					<ul class="breadcrumb hero__breadcrumbs-list" itemscope itemtype="//schema.org/BreadcrumbList">
-						<li itemprop="itemListElement" itemscope itemtype="//schema.org/ListItem" class="hero__breadcrumbs-item">
+					<ul class="breadcrumb hero__breadcrumbs-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="hero__breadcrumbs-item">
 							<a target="_blank" href="#" itemprop="item" class="hero__breadcrumbs-link">
 								<span itemprop="name">Главная</span>
 							</a>
 							<meta itemprop="position" content="1" />
 						</li>
-						<li itemprop="itemListElement" itemscope itemtype="//schema.org/ListItem" class="hero__breadcrumbs-item">
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="hero__breadcrumbs-item">
 							<a target="_blank" href="#" itemprop="item" class="hero__breadcrumbs-link">
 								<span itemprop="name">Обучение</span>
 							</a>
@@ -123,7 +125,7 @@
 			</div>
 		</section>
 
-		<section class="learning">
+		<section class="learning" id="learning">
 			<div class="container">
 				<h3 class="learning__title section__title">
 					Обучение по продажам на маркетплейсах от 

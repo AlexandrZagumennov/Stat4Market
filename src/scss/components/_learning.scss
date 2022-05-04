@@ -1,0 +1,245 @@
+.learning {
+	padding: 55px 0 69px;
+}
+
+.learning__title {
+	display: block;
+	max-width: 300px;
+	margin: 0 auto 21px;
+}
+
+.learning__title-main-span {
+	position: relative;
+		
+	&::after {
+		display: block;
+		content: '';
+		width: 131px;
+		height: 4px;
+		background: linear-gradient(264.91deg, #7C4EAB 0.73%, #DD51D4 95.85%);
+		border-radius: 5px;
+		position: absolute;
+		bottom: -5px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.learning__title-color-span{
+	color: $highlighting-color;
+}
+
+.learning__description {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.learning__list {
+	max-width: 260px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.learning__item {
+	padding-top: 80px;
+	position: relative;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 60px;
+		height: 60px;
+
+		background: {
+			color: transparent;
+			size: 105px 105px;
+			repeat: no-repeat;
+			position: 50% 43%;
+		};
+
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&_simply {
+		&::before {
+			background-image: url('../img/learning/simply.png');
+			background-image: -webkit-image-set(
+				url('../img/learning/simply.avif') 1x,
+				url('../img/learning/simply.webp') 1x
+			);
+			background-image: image-set(
+				url('../img/learning/simply.avif') 1x,
+				url('../img/learning/simply.webp') 1x
+			);
+		}
+	}
+
+	&_extra {
+		&::before {
+			background-image: url('../img/learning/extra.png');
+			background-image: -webkit-image-set(
+				url('../img/learning/extra.avif') 1x,
+				url('../img/learning/extra.webp') 1x
+			);
+			background-image: image-set(
+				url('../img/learning/extra.avif') 1x,
+				url('../img/learning/extra.webp') 1x
+			);
+		}
+	}
+
+	&_practice {
+		&::before {
+			background-image: url('../img/learning/practice.png');
+			background-image: -webkit-image-set(
+				url('../img/learning/practice.avif') 1x,
+				url('../img/learning/practice.webp') 1x
+			);
+			background-image: image-set(
+				url('../img/learning/practice.avif') 1x,
+				url('../img/learning/practice.webp') 1x
+			);
+		}
+	}
+
+	&_founders {
+		&::before {
+			background-image: url('../img/learning/founders.png');
+			background-image: -webkit-image-set(
+				url('../img/learning/founders.avif') 1x,
+				url('../img/learning/founders.webp') 1x
+			);
+			background-image: image-set(
+				url('../img/learning/founders.avif') 1x,
+				url('../img/learning/founders.webp') 1x
+			);
+		}
+	}
+}
+
+.learning__item-title {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 150%;
+	text-align: center;
+	margin-bottom: 10px;
+	color: $title-color;
+}
+
+.learning__item-text {
+	font-size: 16px;
+	line-height: 160%;
+	text-align: center;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.learning {
+		padding: 54px 0 85px;
+	}
+
+	.learning__title {
+		max-width: 626px;
+		margin: 0 auto 22px;
+	}
+
+	.learning__title-main-span {
+			
+		&::after {
+			width: 218px;
+			height: 6px;
+			border-radius: 5px;
+		}
+	}
+
+	.learning__description {
+		max-width: 684px;
+		margin: 0 auto 80px;
+	}
+
+	.learning__description-text {
+		max-width: 100%;
+	}
+
+	.learning__list {
+		max-width: 570px;
+		flex-direction: row;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		gap: 60px;
+	}
+
+	.learning__item {
+		max-width: 255px;
+
+		&::before {
+			left: 0;
+			transform: translateX(0);
+		}
+	}
+
+	.learning__item-title, 
+	.learning__item-text {
+		text-align: left;
+	}
+
+	.learning__item-title {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.learning {
+		padding: 51px 0 121px;
+	}
+
+	.learning__title {
+		max-width: 642px;
+		font-size: 40px;
+		margin: 0 auto 24px;
+	}
+
+	.learning__description {
+		margin: 0 auto 85px;
+	}
+
+	.learning__list {
+		max-width: 100%;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 1920px) {
+	.learning {
+		padding: 65px 0 131px;
+	}
+
+	.learning__title {
+		max-width: 678px;
+		margin: 0 auto 23px;
+	}
+
+	.learning__description {
+		max-width: 846px;
+		margin: 0 auto 85px;
+	}
+
+	.learning__item {
+		max-width: 290px;
+	}
+
+	.learning__item-title {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+
+	.learning__item-text {
+		font-size: 18px;
+	}
+}

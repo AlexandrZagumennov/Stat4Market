@@ -1,0 +1,163 @@
+.how-work {
+	padding: 45px 0;
+}
+
+.how-work__title {
+	margin-bottom: 50px;
+}
+
+.how-work__container {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.how-work__row-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+.how-work__row-img {
+	background: {
+		color: transparent;
+		size: contain;
+		repeat: no-repeat;
+	};
+
+	&_buisness {
+		width: 270px;
+		height: 277px;
+		background-image: url('../img/how-work/buisness.png');
+
+		background-image: -webkit-image-set(
+			url('../img/how-work/buisness.avif') 1x,
+			url('../img/how-work/buisness.webp') 1x
+		);
+		background-image: image-set(
+			url('../img/how-work/buisness.avif') 1x,
+			url('../img/how-work/buisness.webp') 1x
+		);
+	}
+
+	&_marcetplace {
+		width: 270px;
+		height: 277px;
+		background-image: url('../img/how-work/marketplace.png');
+
+		background-image: -webkit-image-set(
+			url('../img/how-work/marketplace.avif') 1x,
+			url('../img/how-work/marketplace.webp') 1x
+		);
+		background-image: image-set(
+			url('../img/how-work/marketplace.avif') 1x,
+			url('../img/how-work/marketplace.webp') 1x
+		);
+	}
+}
+
+@media (min-width: 768px) {
+	.how-work {
+		padding: 25px 0 75px;
+	}
+
+	.how-work__title {
+		margin-bottom: 80px;
+	}
+
+	.how-work__container {
+		gap: 60px;
+	}
+
+	.how-work__row-wrapper {
+		flex-direction: row;
+		gap: 40px;
+	}
+
+	.how-work__row-img_marcetplace {
+		order: 1;
+	}
+}
+
+@media (min-width: 1280px) {
+	.how-work {
+		padding: 41px 0 90px;
+	}
+
+	.how-work__title {
+		margin-bottom: 85px;
+	}
+
+	.how-work__container {
+		max-width: 995px;
+		margin: 0 auto;
+		gap: 0;
+	}
+
+	.how-work__row-wrapper {
+		gap: 80px;
+	}
+
+	.how-work__row-img {
+		&_buisness {
+			width: 352px;
+			height: 362px;
+		}
+	
+		&_marcetplace {
+			width: 358px;
+			height: 358px;
+		}
+	}
+
+	.how-work__row-content {
+
+		&_first {
+			max-width: 563px;
+		}
+
+		&_second {
+			max-width: 582px;
+		}
+	}
+}
+
+@media (min-width: 1920px) {
+	.how-work {
+		padding: 117px 0 75px;
+	}
+
+	.how-work__container {
+		max-width: 1286px;
+	}
+
+	.how-work__row-img {
+		&_buisness {
+			width: 456px;
+			height: 469px;
+		}
+	
+		&_marcetplace {
+			width: 474px;
+			height: 474px;
+		}
+	}
+
+	.how-work__row-content {
+
+		&_first,
+		&_second {
+			max-width: 750px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
